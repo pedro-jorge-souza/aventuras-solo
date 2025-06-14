@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Cripta do Rei Sombrio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="intro-screen">
+            <h1>A Cripta do Rei Sombrio</h1>
+            <p>Você é Sir Kaelen, um cavaleiro renomado pela sua bravura. O Rei Sombrio Malkor roubou a Pedra do Sol, mergulhando o reino em um inverno eterno. Sua missão é invadir a cripta, recuperar a pedra e restaurar a luz a Eldoria. Após uma longa jornada, você está na entrada. O destino do reino está em suas mãos.</p>
+            <button id="start-button">Iniciar Aventura</button>
+        </div>
+
+        <div id="scene-container" class="hidden">
+            <img id="scene-image" src="" alt="Cena da aventura">
+            <div id="scene-content">
+                <h2 id="scene-number"></h2>
+                <p id="scene-text"></p>
+                <div id="scene-choices">
+                    </div>
+                <div id="game-over-message" class="hidden">
+                    <p id="game-over-text"></p>
+                    <button id="restart-button">Jogar Novamente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

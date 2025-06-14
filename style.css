@@ -1,0 +1,135 @@
+/* Importação de Fontes do Google */
+:root {
+    --font-title: "Cinzel", serif;
+    --font-body: "Lora", serif;
+    --primary-color: #e0e0e0;
+    --background-color: #1a1a1a;
+    --container-bg: #2a2a2a;
+    --accent-color: #c8a464;
+    --border-color: #444;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--container-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+#intro-screen {
+    padding: 40px;
+    text-align: center;
+}
+
+#intro-screen h1 {
+    font-family: var(--font-title);
+    color: var(--accent-color);
+    font-size: 2.5em;
+}
+
+#intro-screen p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#scene-image {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid var(--border-color);
+}
+
+#scene-content {
+    padding: 30px;
+}
+
+#scene-number {
+    font-family: var(--font-title);
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 0;
+}
+
+#scene-text {
+    font-size: 1.2em;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+#scene-choices {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.choice-button, #start-button, #restart-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    font-family: var(--font-body);
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.choice-button:hover, #start-button:hover, #restart-button:hover {
+    background-color: var(--accent-color);
+    color: var(--container-bg);
+}
+
+#start-button, #restart-button {
+    text-align: center;
+    max-width: 300px;
+    margin: 30px auto 0 auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#game-over-message {
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+#game-over-text {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+#game-over-message p:first-child {
+    font-family: var(--font-title);
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
