@@ -37,10 +37,21 @@ body {
     text-align: center;
 }
 
+/* NOVO ESTILO PARA A IMAGEM DE INTRODUÇÃO */
+#intro-image {
+    display: block;
+    margin: 0 auto 30px auto; /* Centraliza e adiciona espaço abaixo */
+    max-width: 60%; /* A imagem ocupará 60% da largura do container */
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+}
+
 #intro-screen h1 {
     font-family: var(--font-title);
     color: var(--accent-color);
     font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 #intro-screen p {
